@@ -4,14 +4,6 @@
 #include "stdbool.h"
 #include <stdarg.h>
 
-void get_matches ( const char * str, const char * format, ... )
-{
-  va_list args;
-  va_start (args, format);
-  vsscanf (str, format, args);
-  va_end (args);
-}
-
 int is_unknown( char symb )
 {
     if( symb == 'x' || symb == 'X' )
